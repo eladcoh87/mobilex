@@ -1,10 +1,14 @@
 
+import MainHeader from "./components/MainHeader/MainHeader";
 
 function App() {
+
   return (
-   <h1>new project</h1>
+
+   <MainHeader />
    
-  );
+  )
+
 }
 
 export default App;

@@ -14,8 +14,10 @@ const Announcement = () => {
         <div className='helper'></div>
         <p className='messege'>FREE SHIPPING ON ALL ORDERS OVER $40 </p>
 
+
+        <div className='OptionsDropdownContainer'>
         <OptionsDropdown className="OptionsDropdown" />
-        
+        </div>
         </div>
 
   )

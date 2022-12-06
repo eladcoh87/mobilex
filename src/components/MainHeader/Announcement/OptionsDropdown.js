@@ -26,25 +26,19 @@ const OptionsDropdown = () => {
 
     <div className='selectedDiv'>
 
-    <select className='selectContainer'>
+    <select  defaultValue="ENGLISH" className='selectContainer'>
  
-        <option className='selected' value="ENGLISH" selected hidden>
-          English
-      </option>
-
-
+    
         <option value="ENGLISH">ENGLISH</option>
 
     </select>
 
-    <select className='selectContainer selectContainer2'>
+    <select defaultValue="USD" className='selectContainer selectContainer2'>
  
 
- <option className='selected' value="USD" selected hidden>
-   USA (USD)
-</option>
 
- <option value="USD">USA (USD)</option>
+
+ <option value="USD">USA(USD)</option>
 
 </select>
 

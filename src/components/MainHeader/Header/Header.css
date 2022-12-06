@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+JP&family=Zen+Dots&display=swap');
+
+.headerContainer{
+
+
+background-color: transparent;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 3rem 4rem;
+min-width: 40rem;
+
+
+}
+
+
+.menuiconContainer{
+
+display: none;
+
+
+}
+
+
+
+.linkContainer{
+
+  
+   display: flex;
+   align-items: center;
+
+
+}
+
+.linkContainer a {
+
+
+font-size: 1.6rem;
+padding: 0 2rem;
+
+}
+
+
+
+a:link ,a:visited {
+
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+     font-family: 'Roboto', sans-serif;
+}
+
+a:hover,a:active {
+
+
+    text-decoration: none;
+    color: red;
+     font-family: 'Roboto', sans-serif;
+     transition: all .4s ease;
+     -webkit-transition: all .4s ease;
+
+}
+
+
+
+
+.logo {
+    font-size: 3rem;
+    font-family: 'Zen Dots', cursive;
+    color: red;
+    display: inline-block;
+}
+
+
+.logoMobile{
+
+    display: none;
+}
+
+
+
+.logoContainer p {
+
+    font-size: 3rem;
+    font-family: 'Zen Dots', cursive;
+    color: red;
+    
+
+}
+
+
+.carticon {
+
+font-size: 30px;
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+    .linkContainer {
+      display: none;
+    }
+
+
+
+    .menuiconContainer {
+
+
+            display: block;
+
+
+    }
+
+
+
+.logoMobile{
+
+    display: block;
+    
+}
+
+  }

@@ -1,0 +1,63 @@
+
+.hero-section {
+    background: url("https://images.unsplash.com/photo-1567581935884-3349723552ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80") 50% no-repeat;
+    background-size: cover;
+    height: 70rem;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+
+  .hero-section .hero-section-text{
+    margin-top: 5rem;
+    
+  }
+
+  .hero-section .hero-section-text h1 {
+    color: #fefefe;
+    text-shadow: 1px 1px 2px #0a0a0a;
+    font-size: 10rem;
+     font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  .hero-section .hero-section-text h5 {
+    color: #fefefe;
+    text-shadow: 1px 1px 2px #0a0a0a;
+    font-size: 2rem;
+     font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  
+  .herobutton {
+    margin-top: 4rem;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:40px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:17px 49px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.herobutton:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+.herobutton:active {
+	position:relative;
+	top:1px;
+}

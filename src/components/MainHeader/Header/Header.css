@@ -8,7 +8,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 padding: 3rem 4rem;
-min-width: 40rem;
+min-width: 30rem;
 
 
 }
@@ -98,6 +98,7 @@ font-size: 30px;
 @media screen and (max-width: 800px) {
 
 
+
     .linkContainer {
       display: none;
     }
@@ -119,5 +120,17 @@ font-size: 30px;
     display: block;
     
 }
+
+  }
+
+
+  @media screen and (max-width: 350px) {
+
+
+    .headerContainer{
+
+            gap: 1rem;
+            padding: 2rem 1.5rem;
+    }
 
   }

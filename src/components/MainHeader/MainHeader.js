@@ -8,13 +8,13 @@ const MainHeader = () => {
   return (
 
 
-    <Fragment>
+    <div>
         
         
           <Announcement />
           <Header />
 
-</Fragment>
+</div>
   )
 }
 

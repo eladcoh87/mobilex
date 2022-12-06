@@ -1,8 +1,98 @@
 
+
 .hero-section {
-    background: url("https://images.unsplash.com/photo-1567581935884-3349723552ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80") 50% no-repeat;
+
+  width: 100%;
+
+  min-width: 30rem;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.2rem;
+
+}
+
+
+.hero-section img {
+
+
+  width: 100%;
+  max-height: 70rem;
+  object-fit: cover;
+
+}
+
+
+.centered {
+  margin-top: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+  
+
+  
+}
+
+
+
+.centered h5 {
+ 
+  font-size: clamp(2.3rem, 2.5vw, 8rem); 
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  
+}
+
+.centered p {
+ 
+  font-size: clamp(0.2rem, 2.5vw, 2rem); 
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+@media screen and (max-width: 650px) {
+
+  .centered p {
+ 
+   display: none;
+  }
+  
+  
+  
+  
+    }
+
+
+    
+@media screen and (max-width: 335px) {
+
+  .hero-section {
+ 
+    min-width: 33rem;
+  }
+  
+  
+  
+  
+    }
+
+
+/* 
+.hero-section {
+    background: url("https://images.unsplash.com/photo-1567581935884-3349723552ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80") 100% no-repeat;
     background-size: cover;
     height: 70rem;
+    width: 100%;
     text-align: center;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -13,10 +103,11 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
+            margin-bottom: 0.8rem;
   }
-  
+   */
 
-  .hero-section .hero-section-text{
+  /* .hero-section .hero-section-text{
     margin-top: 5rem;
     
   }
@@ -33,31 +124,6 @@
     text-shadow: 1px 1px 2px #0a0a0a;
     font-size: 2rem;
      font-family: 'Noto Sans JP', sans-serif;
+     margin-bottom: 5rem;
   }
-
-  
-  .herobutton {
-    margin-top: 4rem;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-	background-color:#ffffff;
-	border-radius:40px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#666666;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:17px 49px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-}
-.herobutton:hover {
-	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-	background-color:#f6f6f6;
-}
-.herobutton:active {
-	position:relative;
-	top:1px;
-}
+ */

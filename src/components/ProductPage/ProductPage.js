@@ -27,7 +27,7 @@ console.log(imgPath);
         <div className='productPageImageContainer'>
 
 
-            <img src={imgPath} alt="" />
+            <img  src={imgPath} alt="" />
             
             </div>
 
@@ -38,9 +38,7 @@ console.log(imgPath);
             <h1>Apple iPhone 5c, Blue 16GB Unlocked </h1>
              <p className='headlinepragraphe'>Lorem, ipsum dolor sit amet consectetur</p>
 
-             <p className='descParagrape'>Fresh innovations and an unmistakable heritage design make the Women's Nike Waffle One SE Casual Shoes a go-to choice for your everyday rotation. Animal-print graphics hit the Swoosh on this iteration, adding texture and savage style to this instant classic.
-
-This is a demo store. You can purchase products like this from Finishline.</p>
+             <p className='descParagrape'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed toIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it .</p>
              </div>
 
                 <div className='btnContainer'>

@@ -38,4 +38,29 @@ font-size: 1.4rem;
 
 }
 
+.acorddetail p{
+
+
+    font-size: 1.2rem;
+    
+   
+
+}
+
+@media screen and (max-width: 1150px) {
+
+
+    .accordionContainer {
+
+
+        width: 80%;
+        
+        }
+
+
+
+  }
+
+
+
 

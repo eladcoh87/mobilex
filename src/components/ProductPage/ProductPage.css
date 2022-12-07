@@ -88,6 +88,7 @@ text-align: center;
        }
        .prodcutpageATC:hover{
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+        cursor:pointer;
        }
        .prodcutpageATC:active{
         transform: scale(0.95);
@@ -101,5 +102,53 @@ display: flex;
 align-items: center;
 justify-content: center;
 
-
 }
+
+@media screen and (max-width: 1150px) {
+
+    .productPageContainer{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+  .descContainer{
+    margin-top: 5rem;
+    width: 80%;
+
+
+  }
+
+
+  .productPageImageContainer{
+
+
+width: 80%;
+
+  }
+  .productPageImageContainer img {
+
+
+width: 40%;
+
+  }
+
+
+  }
+
+  @media screen and (max-width: 420px) {
+
+
+        .prodcutpageATC {
+
+            font-size: clamp(0.2rem, 4vw, 2rem); 
+            padding: 4vw 10vw;
+
+        }
+
+
+  }

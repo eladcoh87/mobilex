@@ -1,0 +1,41 @@
+.accordionContainer {
+
+
+width: 50%;
+
+}
+
+.acordheadline{
+
+font-size: 1.4rem;
+
+
+
+}
+
+.acordheade{
+
+
+    align-items: center ; 
+    align-content: center ;
+    justify-content: center ;
+    display: flex;
+
+    
+   
+
+}
+.acordheade h1{
+
+
+    align-items: center ; 
+    align-content: center ;
+    justify-content: center ;
+    display: flex;
+    margin-left: 0.5rem;
+    
+   
+
+}
+
+

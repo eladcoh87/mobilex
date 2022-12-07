@@ -1,0 +1,105 @@
+.productPageContainer{
+
+    background-color: #FDFDFD;
+
+        display: flex;
+        padding: 3rem;
+
+}
+
+.productPageImageContainer{
+
+width: 50%;
+
+display: flex;
+justify-content: center;
+
+}
+
+
+.descContainer{
+
+    width: 50%;
+
+
+}
+
+.desHeadline{
+
+
+font-size: 4rem;
+text-align: center;
+margin-bottom: 5rem;
+}
+
+
+.desHeadline h1{
+
+    margin-bottom: 1rem;
+    
+    }
+
+
+.headlinepragraphe{
+
+font-size: 1.4rem;
+color: gray;
+margin-bottom: 3rem;
+
+}
+
+.descParagrape{
+
+font-size: 1.6rem;
+color: black;
+
+
+
+}
+
+.Productdescripton{
+
+font-size: 2rem;
+line-height: 2.6rem;
+}
+
+
+.btnContainer{
+
+text-align: center;
+
+}
+
+
+
+
+    .prodcutpageATC{
+        background-color: #000000;
+        color: #ffffff;
+        font-family: Tahoma;
+        font-size: 16px;
+        font-weight: 800;
+        font-style: normal;
+        text-decoration: none;
+        padding: 11px 88px;
+        border: 0px solid #000;
+        border-radius: 32px;
+        display: inline-block;
+       }
+       .prodcutpageATC:hover{
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+       }
+       .prodcutpageATC:active{
+        transform: scale(0.95);
+       }
+
+
+.accourdionConatiner {
+
+margin-top: 5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}

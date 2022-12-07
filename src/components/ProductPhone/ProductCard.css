@@ -1,3 +1,16 @@
+
+
+.css-1xez8po-MuiPaper-root-MuiCard-root.carditemContainer{
+
+background-color: #f2f3f393;
+
+
+
+}
+
+
+
+
 .css-o69gx8-MuiCardMedia-root.productCardImg {
 
 
@@ -24,7 +37,7 @@ margin-bottom: 1rem  !important;
 
 .priceText{
 
-color: red;
+color: red ;
    margin-top: 2rem;
     font-size: 2rem ;
     }

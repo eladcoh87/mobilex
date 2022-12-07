@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+JP&family=Zen+Dots&display=swap');
 
 .headerContainer{
-
+   
+  
+   
 
 background-color: transparent;
 display: flex;
@@ -9,6 +11,9 @@ justify-content: space-between;
 align-items: center;
 padding: 3rem 4rem;
 min-width: 30rem;
+
+background-color: white;
+
 
 
 }

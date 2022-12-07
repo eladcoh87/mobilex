@@ -1,11 +1,14 @@
 import { Action } from '@remix-run/router'
 import React from 'react'
+import productList from '../../Assets/productList'
+
+
+const initailState = {productsOnStore: productList,
+CartItem:[] }
 
 
 
-const initailState = {test:'elad'}
-
-const MobileXredcuer = (state = initailState,action ) => {
+const MobileXredcuer = (state = initailState,action) => {
 
 
 switch (action.type) {

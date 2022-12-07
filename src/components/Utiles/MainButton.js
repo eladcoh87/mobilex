@@ -10,7 +10,7 @@ const MainButton = (props) => {
 
 
 
-    <a href="#" class="mainbutton">{props.text}</a>
+    <a href="#" className="mainbutton">{props.text}</a>
 
 
   )

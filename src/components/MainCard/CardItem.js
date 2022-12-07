@@ -19,7 +19,7 @@ export default function CardItem(props) {
 
         <img src={props.imgurl} alt="" />
 
-        <div class="centeredCard">{props.title} <br />
+        <div className="centeredCard">{props.title} <br />
         
         <p>{props.para} </p>
         

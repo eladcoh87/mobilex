@@ -1,85 +1,57 @@
-.cardContainer{
+.cardContainer {
+  max-width: 120rem;
 
-
-max-width: 120rem ;
-
-
-position: relative;
-text-align: center;
-color: white;
-max-height: 62rem;
-background: rgba(0, 0, 0, 0.692);
-overflow: hidden;
-
+  position: relative;
+  text-align: center;
+  color: white;
+  max-height: 62rem;
+  background: rgba(0, 0, 0, 0.692);
+  overflow: hidden;
 }
 
-.cardContainer img{
-
-    
-
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0.7;
-        
-    
-    
-    }
-
-    .centeredCard{
-
-        
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: clamp(1.8rem, 2.5vw, 2.5rem);
-        display: flex;
-        flex-direction: column; 
-
-    }
-
-    .centeredCard p {
-
-        font-size: clamp(1rem, 2.5vw, 2rem); 
-          font-family: 'Inter', sans-serif;
-
-
-    }
-
-
-
-
-    @media screen and (max-width: 332px) {
-
-        .cardContainer {
-
-            min-width: 35rem;
-
-
-
-        }
-
-
-      }
-
-      
-
-    @media screen and (max-width: 1070px) {
-
-       
-.hidecard{
-
-display: none;
-
+.cardContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
 }
 
-.centeredCard{
+.centeredCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+}
 
+.centeredCard p {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  font-family: 'Inter', sans-serif;
+}
+
+.css-sghohy-MuiButtonBase-root-MuiButton-root {
+
+margin-top: 3rem !important;
+background-color: white !important ;
+color: black !important ; 
+font-size: 1.2rem !important;
+border-radius: 4rem !important;
+}
+
+@media screen and (max-width: 332px) {
+  .cardContainer {
+    min-width: 35rem;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .hidecard {
+    display: none;
+  }
+
+  .centeredCard {
     font-size: clamp(2rem, 6vw, 6rem);
-
-
+  }
 }
-
-
-      }

@@ -33,6 +33,7 @@
   color: white;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
+ 
   
 
   
@@ -58,6 +59,32 @@
 
 
 
+  
+@media screen and (max-width: 1070px) {
+
+  
+  
+  
+  .centered {
+
+
+    display: flex;
+    flex-direction: column;
+    
+
+
+  }
+    
+
+
+  .centered h5 {
+
+
+    margin-bottom: 2rem;
+  }
+
+
+}
 
 
 @media screen and (max-width: 650px) {

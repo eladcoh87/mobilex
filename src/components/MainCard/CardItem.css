@@ -26,24 +26,28 @@ overflow: hidden;
     
     }
 
-    .centered{
+    .centeredCard{
 
         
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-size: clamp(2rem, 2.5vw, 2.5rem); 
+        font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+        display: flex;
+        flex-direction: column; 
 
     }
 
-    .centered p {
+    .centeredCard p {
 
         font-size: clamp(1rem, 2.5vw, 2rem); 
           font-family: 'Inter', sans-serif;
 
 
     }
+
+
 
 
     @media screen and (max-width: 332px) {
@@ -70,7 +74,12 @@ display: none;
 
 }
 
+.centeredCard{
 
+    font-size: clamp(2rem, 6vw, 6rem);
+
+
+}
 
 
       }

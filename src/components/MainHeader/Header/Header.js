@@ -4,10 +4,10 @@ import React from 'react';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import MenuIcon from '@mui/icons-material/Menu';
 
-
-
 import './Header.css';
 import { Link } from 'react-router-dom';
+import TemporaryDrawer from './MobileNav/MobileNav';
+import { useState } from 'react';
 
 const Header = () => {
 
@@ -20,15 +20,23 @@ const Header = () => {
     
 <div className='menuiconContainer'>
 
-<MenuIcon className='menuicon' fontSize='large' />
+
+<TemporaryDrawer />
+
+
+
 </div>
 
 
-  <Link className='logoMobile logo' to='/'>
+
+  <Link  className='logoMobile logo' to='/'>
     
      <p className="logoMobile logo">MOBILEX</p>
   
    </Link>
+
+
+
 
 {/* <p className="logoMobile logo">MOBILEX</p> */}
 

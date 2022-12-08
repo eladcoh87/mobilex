@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+JP&family=Zen+Dots&display=swap');
 
+
+
+
+
 .headerContainer{
    
   
@@ -114,10 +118,18 @@ font-size: 30px;
 
 
             display: block;
-
+            
 
     }
 
+    .menuicon{
+
+        font-size: 3rem !important;
+       
+        color: black;
+        cursor: pointer;
+
+    }
 
 
 .logoMobile{

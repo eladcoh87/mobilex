@@ -1,0 +1,31 @@
+
+
+
+.MuiDrawer-paper {
+
+    background-color:white !important;
+    margin-top: 22vh !important;
+  
+}
+
+
+.MuiBackdrop-root{
+    margin-top:  23vh !important;
+
+
+}
+
+
+
+
+
+.mobilenavlistitem li{
+
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+    background-color:rgba(220, 220, 220, 0.514) ;
+    }
+
+

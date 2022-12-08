@@ -12,15 +12,17 @@ const MainHeader = () => {
 
   return (
 
-    <AppBar>
-    <div className='MainHeaderContainer'>
+   
+   
+          <div >
         
-        
+        <AppBar>
           <Announcement />
           <Header />
+          </AppBar>
+          </div>
 
-</div>
-</AppBar>
+
   )
 }
 

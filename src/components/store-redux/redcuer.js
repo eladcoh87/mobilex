@@ -27,11 +27,37 @@ switch (action.type) {
     
 
         const PhoneProduct = state.productsOnStore.find((product => product.id == action.payload ));
-          console.log(PhoneProduct);
+          
+        const PhoneProductInCartAlredy = state.CartItem.find((product => product.id == PhoneProduct.id ))
 
-      state.CartItem.push({model:PhoneProduct.model,price:PhoneProduct.price,quantity:1,id:PhoneProduct.id})
+        if (!PhoneProductInCartAlredy) {
 
-  
+          console.log('ADD the PROUCT FOR THE FIRST TIME ')
+          state.CartItem.push({model:PhoneProduct.model,price:PhoneProduct.price,quantity:1,id:PhoneProduct.id})
+
+
+        }
+
+        if (PhoneProductInCartAlredy) {
+
+          console.log('the prodct exist ',PhoneProductInCartAlredy)
+
+          const PhoneProductCartIndex = state.CartItem.findIndex((product) => product.id === PhoneProductInCartAlredy.id )
+
+              console.log(PhoneProductCartIndex);
+
+              state.CartItem[PhoneProductCartIndex].quantity++
+
+              
+
+        }
+
+          
+
+
+
+
+
 
 
 

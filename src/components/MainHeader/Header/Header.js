@@ -8,8 +8,20 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 import TemporaryDrawer from './MobileNav/MobileNav';
 import { useState } from 'react';
+import CartPageModel from '../../Cart/CartPageModel';
+
+
+
+
 
 const Header = () => {
+
+const [cartPageOpen,setcartPageOpen] = useState(false)
+
+
+
+
+
 
 
   return (
@@ -17,6 +29,7 @@ const Header = () => {
 
     <div className="headerContainer">
 
+ 
     
 <div className='menuiconContainer'>
 
@@ -29,9 +42,9 @@ const Header = () => {
 
 
 
-  <Link  className='logoMobile logo' to='/'>
+  <Link className='logoMobile logo' to='/'>
     
-     <p className="logoMobile logo">MOBILEX</p>
+     <p  className="logoMobile logo">MOBILEX</p>
   
    </Link>
 
@@ -62,13 +75,11 @@ const Header = () => {
 
 
       <div className="cartConainter">
-        <Badge badgeContent={1} color="error">
-          <ShoppingCartOutlinedIcon
-            fontSize="10px"
-            className="carticon"
-            color="action"
-          />
-        </Badge>
+        
+       <CartPageModel />
+
+
+        
       </div>
 
 

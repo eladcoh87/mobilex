@@ -23,6 +23,7 @@ function App() {
     <div>
 
     <Provider store={store}>
+      
    <MainHeader />
 
    <Routes>

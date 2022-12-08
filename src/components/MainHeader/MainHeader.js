@@ -5,24 +5,29 @@ import Announcement from './Announcement/Announcement'
 
 import './MainHeader.css'
 import { AppBar } from '@mui/material'
-
+import CartPageModel from '../Cart/CartPageModel'
 
 const MainHeader = () => {
 
 
+
+
+
   return (
 
-   
-   
+
           <div >
-        
-        <AppBar>
+            
+        <AppBar sx={{height:'30px'}}>
           <Announcement />
           <Header />
+         
+
           </AppBar>
+          
           </div>
 
-
+         
   )
 }
 

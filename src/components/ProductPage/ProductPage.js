@@ -1,10 +1,12 @@
 import { Button } from '@mui/material'
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import './ProductPage.css'
 import Accordion from './Accordion'
 import {Navigate} from 'react-router-dom';
+import { addToCart,removeFromCart } from '../store-redux/actions';
+
 
 const ProductPage = () => {
 
@@ -15,6 +17,17 @@ const ProductListFromState = useSelector((state => state.productsOnStore))
 const {id} = useParams()
 
 const getThePruddcta = ProductListFromState.find(product =>  product.id == id)
+
+   const dispatch = useDispatch();
+
+const addToCartHandel = () => {
+
+  dispatch(addToCart(id))
+
+
+}
+
+
 
 
 if(!getThePruddcta) {
@@ -30,11 +43,9 @@ if(!getThePruddcta) {
 
 }
 
-console.log(getThePruddcta)
 
 
 const imgPath = Object.values(getThePruddcta.phonePicPath)[0]
-console.log(imgPath);
 
   return (
 
@@ -48,7 +59,6 @@ console.log(imgPath);
             
             </div>
 
-
         <div className='descContainer'>
 
                 <div className='desHeadline'>
@@ -61,7 +71,7 @@ console.log(imgPath);
 
                 <div className='btnContainer'>
 
-            <button className='prodcutpageATC'>ADD TO CART</button>
+            <button onClick={addToCartHandel} className='prodcutpageATC'>ADD TO CART</button>
              </div>
 
                 <div className='accourdionConatiner'>

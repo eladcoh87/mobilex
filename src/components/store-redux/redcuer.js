@@ -4,7 +4,15 @@ import productList from '../../Assets/productList'
 
 
 const initailState = {productsOnStore: productList,
-CartItem:[] }
+
+
+
+CartItem:[] 
+
+
+
+
+,totalItems:0}
 
 
 
@@ -15,7 +23,20 @@ switch (action.type) {
 
 
   case 'ADD_TO_CART':
+    console.log('i in the redcuer')
     
+
+        const PhoneProduct = state.productsOnStore.find((product => product.id == action.payload ));
+          console.log(PhoneProduct);
+
+      state.CartItem.push({model:PhoneProduct.model,price:PhoneProduct.price,quantity:1,id:PhoneProduct.id})
+
+  
+
+
+
+      
+
     return {...state}
 
     case 'REMOVE_FROM_CART':

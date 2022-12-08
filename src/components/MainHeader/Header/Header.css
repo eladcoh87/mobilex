@@ -103,6 +103,12 @@ font-size: 30px;
 
 }
 
+.cartConainter{
+
+cursor: pointer;
+
+
+}
 
 @media screen and (max-width: 800px) {
 

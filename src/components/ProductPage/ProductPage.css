@@ -140,6 +140,12 @@ width: 40%;
 
   }
 
+  .desHeadline h3{
+
+    color: red;
+    margin-bottom: 2rem;
+  }
+
   @media screen and (max-width: 420px) {
 
 
@@ -150,5 +156,6 @@ width: 40%;
 
         }
 
+         
 
   }

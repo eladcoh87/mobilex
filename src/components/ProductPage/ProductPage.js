@@ -35,8 +35,9 @@ console.log(imgPath);
         <div className='descContainer'>
 
                 <div className='desHeadline'>
-            <h1>Apple iPhone 5c, Blue 16GB Unlocked </h1>
-             <p className='headlinepragraphe'>Lorem, ipsum dolor sit amet consectetur</p>
+            <h1>{getThePruddcta.model}</h1>
+            <h3>{getThePruddcta.price}$</h3>
+             <p className='headlinepragraphe'>{getThePruddcta.description}</p>
 
              <p className='descParagrape'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed toIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it .</p>
              </div>

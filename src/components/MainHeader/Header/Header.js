@@ -7,6 +7,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 
 import './Header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -23,14 +24,28 @@ const Header = () => {
 </div>
 
 
+  <Link className='logoMobile logo' to='/'>
+    
+     <p className="logoMobile logo">MOBILEX</p>
+  
+   </Link>
 
-<p className="logoMobile logo">MOBILEX</p>
-
+{/* <p className="logoMobile logo">MOBILEX</p> */}
 
       <nav className="linkContainer">
-        <a href="#">
-          <p className="logo">MOBILEX</p>
-        </a>
+
+
+
+      <Link className='logo' to='/'>
+    
+    <p className="logo">MOBILEX</p>
+ 
+  </Link>
+
+
+
+
+      
         <a href="#">Shop</a>
         <a href="#">News</a>
         <a href="#">About</a>

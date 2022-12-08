@@ -4,14 +4,31 @@ import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import './ProductPage.css'
 import Accordion from './Accordion'
+import {Navigate} from 'react-router-dom';
 
 const ProductPage = () => {
+
+
 
 const ProductListFromState = useSelector((state => state.productsOnStore))
 
 const {id} = useParams()
 
 const getThePruddcta = ProductListFromState.find(product =>  product.id == id)
+
+
+if(!getThePruddcta) {
+
+  return (
+
+    <div>
+    {<Navigate to="/Pagenotfound" replace={true} />}
+  </div>
+
+  )
+
+
+}
 
 console.log(getThePruddcta)
 

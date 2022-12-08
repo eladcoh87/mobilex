@@ -5,14 +5,17 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import './ProductCard.css'
-
+import { Link } from 'react-router-dom';
 
 export default function ProductCard(props) {
 
 
 
   return (
+   
     <Card className='carditemContainer' sx={{ maxWidth: 300 }}>
+       {/* <Link to="/Product/${}"> */}
+       <Link to={`/Product/${props.id}`}>
       <CardActionArea>
         <CardMedia className='productCardImg'
           component="img"
@@ -32,7 +35,7 @@ export default function ProductCard(props) {
           <p className='priceText'>{props.price}$</p>
         </CardContent>
       </CardActionArea>
-    
+      </Link>
     </Card>
   );
 }

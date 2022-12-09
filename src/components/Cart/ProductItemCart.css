@@ -1,0 +1,72 @@
+.productitemcontainer {
+
+max-height: 15rem;
+max-width: 30rem;
+display: flex;
+gap: 5rem;
+background-color:#e0e0e07c ;
+
+border-radius: 2rem;
+padding: 1rem;
+
+
+}
+
+.imgContainer{
+
+width: 20%;
+
+}
+
+
+
+.productImg {
+
+width: 100%;
+display: block;
+
+}
+
+
+.detialContinaer {
+
+display: flex;
+flex-direction: column;
+gap: 1rem;
+max-height: 40%;
+align-items: center;
+
+
+}
+
+
+.detialContinaer h2{
+
+font-size: 1.1rem;
+
+
+
+}
+
+
+
+.detialContinaer .price {
+
+    font-size: 1.2rem;
+    color: red;
+        margin-bottom: 0.4rem;
+}
+
+
+.detialContinaer .quntenty{
+
+font-size: 1.4rem;
+
+}
+
+
+.quntentyControl {
+margin-top: 1rem;
+text-align: center;
+
+}

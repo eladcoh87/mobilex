@@ -14,11 +14,10 @@ const renderProductList = productsListfromState.map((product) => {
 
   
 
-const imgPath = Object.values(product.phonePicPath)[0]
 
     return (
 
-    <ProductCard model={product.model} price={product.price} phonePic={imgPath} description={product.description} id={product.id} key={product.id} />
+    <ProductCard model={product.model} price={product.price} phonePic={product.phonePicPath} description={product.description} id={product.id} key={product.id} />
 
 
     )

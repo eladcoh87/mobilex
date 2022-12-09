@@ -20,6 +20,7 @@ const getThePruddcta = ProductListFromState.find(product =>  product.id == id)
 
    const dispatch = useDispatch();
 
+   
 const addToCartHandel = () => {
 
   dispatch(addToCart(id))
@@ -44,8 +45,7 @@ if(!getThePruddcta) {
 }
 
 
-
-const imgPath = Object.values(getThePruddcta.phonePicPath)[0]
+console.log(getThePruddcta);
 
   return (
 
@@ -55,7 +55,7 @@ const imgPath = Object.values(getThePruddcta.phonePicPath)[0]
         <div className='productPageImageContainer'>
 
 
-            <img  src={imgPath} alt="" />
+            <img  src={getThePruddcta.phonePicPath} alt="" />
             
             </div>
 

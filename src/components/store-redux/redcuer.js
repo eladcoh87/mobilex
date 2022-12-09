@@ -1,5 +1,3 @@
-import { Action } from '@remix-run/router'
-import React from 'react'
 import productList from '../../Assets/productList'
 
 
@@ -12,9 +10,9 @@ CartItem:[]
 
 
 
-,totalItems:0}
+,totalItems:0,totalPrice:0}
 
-
+console.log(initailState);
 
 const MobileXredcuer = (state = initailState,action) => {
 
@@ -30,13 +28,21 @@ switch (action.type) {
           
         const PhoneProductInCartAlredy = state.CartItem.find((product => product.id == PhoneProduct.id ))
 
+
         if (!PhoneProductInCartAlredy) {
 
+
+
+
+          
           console.log('ADD the PROUCT FOR THE FIRST TIME ')
-          state.CartItem.push({model:PhoneProduct.model,price:PhoneProduct.price,quantity:1,id:PhoneProduct.id})
+          state.CartItem.push({model:PhoneProduct.model,price:PhoneProduct.price,quantity:1,id:PhoneProduct.id,imgpath:PhoneProduct.phonePicPath})
+          state.totalPrice += PhoneProduct.price;
+          state.totalItems++
 
 
         }
+
 
         if (PhoneProductInCartAlredy) {
 
@@ -47,21 +53,11 @@ switch (action.type) {
               console.log(PhoneProductCartIndex);
 
               state.CartItem[PhoneProductCartIndex].quantity++
-
-              
+              state.totalPrice += PhoneProduct.price;
+              state.totalItems++
 
         }
 
-          
-
-
-
-
-
-
-
-
-      
 
     return {...state}
 

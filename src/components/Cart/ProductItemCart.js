@@ -3,16 +3,36 @@ import './ProductItemCart.css'
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import { IconButton } from '@mui/material';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToCart,removeFromCart } from '../store-redux/actions';
 
 
 
 
 const ProductItemCart = (props) => {
 
-
+const cartState = useSelector(state => state)
+                const dispatch = useDispatch()
+console.log(cartState);
     console.log(props)
 
 console.log('come from productitemcart')
+
+
+        const addToCartHandel = () =>{
+
+                dispatch(addToCart(props.id))
+                
+        }
+
+
+        const removeFromCartHandel = () => {
+
+
+                dispatch(removeFromCart(props.id))
+
+        }
+
 
   return (
 
@@ -38,7 +58,7 @@ console.log('come from productitemcart')
                 <div className='quntentyControl'>
 
         
-                <IconButton  className='cartquntentyControl' aria-label="Add">
+                <IconButton onClick={addToCartHandel}  className='cartquntentyControl' aria-label="Add">
                 <AddIcon/>
       </IconButton>
 
@@ -46,7 +66,7 @@ console.log('come from productitemcart')
 
               
 
-      <IconButton  className='cartquntentyControl' aria-label="remove">
+      <IconButton onClick={removeFromCartHandel}  className='cartquntentyControl' aria-label="remove">
                 <RemoveIcon/>
                 </IconButton >
                 </div>

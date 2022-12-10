@@ -1,7 +1,9 @@
 Description 📚
+
 React app to Mobile Phone Ecommerce. This app uses the Redux for state management , React Router for routing, along with mui.
 
 Installation 💡
+
 npm install
 
 npm start

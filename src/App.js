@@ -31,7 +31,7 @@ function App() {
 
    <Route path="/" element={<HomeComponents />  }/>
    <Route path="/Product/:id" element={<ProductPage />  }/>
-
+   <Route path="/mobilex" element={<Navigate to="/" />}/>
 
 
     <Route path="/*" element={<Navigate to="PageNotFound" />} />

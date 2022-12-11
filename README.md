@@ -4,6 +4,11 @@
 ## Installation 💡 
  npm install
 
+
+## Live Demo 🌐 :
+
+https://mobilex.vercel.app
+
 npm start
 
 Runs the app in the development mode.

@@ -25,8 +25,8 @@ export default function CardItem(props) {
         
         {/* <Button className='btn123' color="error" sx={{bgcolor:'white',fontSize:"1.5rem",borderRadius:'20px',mt:'5rem',color:'black'}} variant="contained">Buy Now</Button> */}
 
-
-        <Button className='btn123' variant="contained">Buy Now</Button>
+<button className='btn123'> Buy now</button>
+        {/* <Button className='btn123' variant="contained">Buy Now</Button> */}
         </div>
         
 

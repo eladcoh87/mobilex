@@ -17,7 +17,9 @@ const HeroSection = () => {
       <div className="centered">
         <h5>BACK IN STOCK!</h5>
         <p>Look who's back. We made more of your favorite sustainable tops, shoes, bottoms and bodysuits.</p>
-        <MainButton text='NEW ARRIVAL' />
+
+
+        <MainButton className="btn123" text='NEW ARRIVAL' />
       </div>
 </div>
 

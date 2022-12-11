@@ -15,7 +15,7 @@ const HeroSection = () => {
       <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="" />
 
       <div className="centered">
-        <h5>BACK IN STOCK</h5>
+        <h5>BACK IN STOCK!</h5>
         <p>Look who's back. We made more of your favorite sustainable tops, shoes, bottoms and bodysuits.</p>
         <MainButton text='NEW ARRIVAL' />
       </div>

@@ -31,13 +31,13 @@
   font-family: 'Inter', sans-serif;
 }
 
-.css-sghohy-MuiButtonBase-root-MuiButton-root {
+.css-sghohy-MuiButtonBase-root-MuiButton-root.btn123 {
 
-margin-top: 3rem !important;
-background-color: white !important ;
-color: black !important ; 
-font-size: 1.2rem !important;
-border-radius: 4rem !important;
+margin-top: 3rem ;
+background-color: white  ;
+color: black  ; 
+font-size: 1.2rem ;
+border-radius: 4rem ;
 }
 
 @media screen and (max-width: 332px) {

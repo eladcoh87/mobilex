@@ -4,7 +4,7 @@ import Header from './Header/Header'
 import Announcement from './Announcement/Announcement'
 
 import './MainHeader.css'
-import { AppBar } from '@mui/material'
+import { AppBar, Toolbar } from '@mui/material'
 import CartPageModel from '../Cart/CartPageModel'
 
 const MainHeader = () => {
@@ -18,11 +18,9 @@ const MainHeader = () => {
 
           <div >
             
-        <AppBar sx={{height:'30px'}}>
+        <AppBar>
           <Announcement />
           <Header />
-         
-
           </AppBar>
           
           </div>

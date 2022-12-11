@@ -15,7 +15,6 @@ const HomeComponents = () => {
 
 <HeroSection />
 <MainCard />
-
 <ProductContainer />
     </div>
 

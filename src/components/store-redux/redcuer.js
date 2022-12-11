@@ -8,8 +8,6 @@ const initailState = {productsOnStore: productList,
 CartItem:[] 
 
 
-
-
 ,totalItems:0,totalPrice:0}
 
 console.log(initailState);
@@ -33,56 +31,73 @@ switch (action.type) {
 
 
 
+          const CartItem  = [...state.CartItem,{model:PhoneProduct.model,price:PhoneProduct.price,quantity:1,id:PhoneProduct.id,imgpath:PhoneProduct.phonePicPath}]
 
+              const totalPrice = state.totalPrice + PhoneProduct.price
+              const totalItems = ++state.totalItems
           
-          console.log('ADD the PROUCT FOR THE FIRST TIME ')
-          state.CartItem.push({model:PhoneProduct.model,price:PhoneProduct.price,quantity:1,id:PhoneProduct.id,imgpath:PhoneProduct.phonePicPath})
-          state.totalPrice += PhoneProduct.price;
-          state.totalItems++
 
 
+              return {...state,CartItem,totalItems,totalPrice}
+
+              
         }
 
 
         if (PhoneProductInCartAlredy) {
 
-          console.log('the prodct exist ',PhoneProductInCartAlredy)
 
           const PhoneProductCartIndex = state.CartItem.findIndex((product) => product.id === PhoneProductInCartAlredy.id )
 
-              console.log(PhoneProductCartIndex);
 
-              state.CartItem[PhoneProductCartIndex].quantity++
-              state.totalPrice += PhoneProduct.price;
-              state.totalItems++
+            
+           const CartItem = [...state.CartItem]
+            
+           ++CartItem[PhoneProductCartIndex].quantity
+            
+           const totalPrice =  state.totalPrice + PhoneProduct.price
 
+
+            const totalItems = ++state.totalItems
+
+            return {...state,CartItem,totalItems,totalPrice}
         }
 
 
-    return {...state}
+    
+break
 
     case 'REMOVE_FROM_CART':
-        console.log('come from remove redcuer')
+
+
     
-      const PhoneProduct2 = state.CartItem.find((product => product.id == action.payload ));
+      const PhoneProduct2 = state.CartItem.find((product => product.id === action.payload ));
           
       const PhoneProductCartIndex2 = state.CartItem.findIndex((product) => product.id === PhoneProduct2.id )
 
 
-        if(state.CartItem[PhoneProductCartIndex2].quantity === 0) {
+        if(state.CartItem[PhoneProductCartIndex2].quantity == 0) {
+          console.log('this come from cart')
+          const CartItem = state.CartItem.filter((product => product.id !== PhoneProduct2.id ))
 
-          const CartItem =  state.CartItem.filter((product => product.id !== PhoneProduct2.id ))
 
           return {...state,CartItem}
 
         }
 
 
-      state.CartItem[PhoneProductCartIndex2].quantity--
-      state.totalPrice -= PhoneProduct2.price;
-      state.totalItems--
+      const CartItem = [...state.CartItem]
+      --CartItem[PhoneProductCartIndex2].quantity
 
-      return {...state}
+
+      const totalPrice =  state.totalPrice - PhoneProduct2.price
+
+
+      const totalItems = --state.totalItems
+
+    
+
+      return {...state,CartItem,totalItems,totalPrice}
 
   default:
 

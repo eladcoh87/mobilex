@@ -1,66 +1,31 @@
 .accordionContainer {
-
-
-width: 50%;
-
+  width: 50%;
 }
 
-.acordheadline{
-
-font-size: 1.4rem;
-
-
-
+.acordheadline {
+  font-size: 1.4rem;
 }
 
-.acordheade{
-
-
-    align-items: center ; 
-    align-content: center ;
-    justify-content: center ;
-    display: flex;
-
-    
-   
-
+.acordheade {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
 }
-.acordheade h1{
-
-
-    align-items: center ; 
-    align-content: center ;
-    justify-content: center ;
-    display: flex;
-    margin-left: 0.5rem;
-    
-   
-
+.acordheade h1 {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  margin-left: 0.5rem;
 }
 
-.acorddetail p{
-
-
-    font-size: 1.2rem;
-    
-   
-
+.acorddetail p {
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 1150px) {
-
-
-    .accordionContainer {
-
-
-        width: 80%;
-        
-        }
-
-
-
+  .accordionContainer {
+    width: 80%;
   }
-
-
-
-
+}

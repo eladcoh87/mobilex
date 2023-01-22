@@ -1,66 +1,37 @@
-import React from 'react'
-import ProductCard from './ProductCard'
-import { useSelector } from 'react-redux'
-import "./ProductContainer.css"
-
-
+import React from 'react';
+import ProductCard from './ProductCard';
+import { useSelector } from 'react-redux';
+import './ProductContainer.css';
 
 const ProductContainer = () => {
+  const productsListfromState = useSelector((state) => state.productsOnStore);
 
-const productsListfromState = useSelector(state => state.productsOnStore)
-
-
-const renderProductList = productsListfromState.map((product) => {
-
-  
-
-
+  const renderProductList = productsListfromState.map((product) => {
     return (
-
-    <ProductCard model={product.model} price={product.price} phonePic={product.phonePicPath} description={product.description} id={product.id} key={product.id} />
-
-
-    )
-
-})
-
-
-
-
+      <ProductCard
+        model={product.model}
+        price={product.price}
+        phonePic={product.phonePicPath}
+        description={product.description}
+        id={product.id}
+        key={product.id}
+      />
+    );
+  });
 
   return (
-
-
-    <div className='prudctSectionConatainer'>
-
-
-
-    <div className='productsSectionHeadline'>
-
+    <div className="prudctSectionConatainer">
+      <div className="productsSectionHeadline">
         <h1>Top Picks</h1>
-        <p>New arrivals coming in regularly, find the freshest modern styles here.
-</p>
+        <p>
+          New arrivals coming in regularly, find the freshest modern styles
+          here.
+        </p>
+      </div>
 
-
-
-
-
+      <div className="ProductPhoneContainer">{renderProductList}</div>
     </div>
+  );
+};
 
-
-
-
-<div className='ProductPhoneContainer'>
-{renderProductList}
-</div>
-
-
-    </div>
-  )
-
-
-
-
-}
-
-export default ProductContainer
+export default ProductContainer;

@@ -1,66 +1,34 @@
-
-.prudctSectionConatainer{
-
-margin-top: 8rem;
-background-color: white;
-padding: 0rem 5rem;
-
-
-
+.prudctSectionConatainer {
+  margin-top: 8rem;
+  background-color: white;
+  padding: 0rem 5rem;
 }
 
-.productsSectionHeadline{
-
-
-text-align: center;
-
-
-
+.productsSectionHeadline {
+  text-align: center;
 }
 
+.productsSectionHeadline h1 {
+  font-size: 5rem;
+}
 
-.productsSectionHeadline h1{
+.productsSectionHeadline p {
+  margin-top: 2.3rem;
+  font-size: 2rem;
+}
 
-    font-size: 5rem;
-    
-    
-    }
+.ProductPhoneContainer {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
 
-
-    
-.productsSectionHeadline p{
-
-    margin-top: 2.3rem;
-    font-size: 2rem;
-    
-    
-    }
-
-
-
-
-    
-.ProductPhoneContainer{
-
-    margin-top: 6rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-    }
-
-
-    @media screen and (max-width: 700px) {
-
-
-        .ProductPhoneContainer {
-
-flex-direction: column;
-
-
-        }
-
-    }
-      
+@media screen and (max-width: 700px) {
+  .ProductPhoneContainer {
+    flex-direction: column;
+  }
+}

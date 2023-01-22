@@ -12,88 +12,62 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
-import './MobileNav.css'
+import './MobileNav.css';
 
 export default function TemporaryDrawer() {
+  const [state, setState] = useState({ left: false });
 
-
-    const [state,setState] = useState({left: false})
- 
-
-  const onClickHandel = () =>{
-
-
-    setState({left: true})
-
-
-  }
+  const onClickHandel = () => {
+    setState({ left: true });
+  };
 
   const toggleDrawer = (anchor, open) => (event) => {
-    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+    if (
+      event.type === 'keydown' &&
+      (event.key === 'Tab' || event.key === 'Shift')
+    ) {
       return;
     }
 
-    setState({left: false});
+    setState({ left: false });
   };
 
-
-
-
-
   const list = (anchor) => (
-    
-    <Box className='box'
+    <Box
+      className="box"
       sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 450 }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-    <div className='mobilenavLinks'>
-
-      <ul className='mobilenavlistitem'>
-        <li>Menu</li>
-        <Divider />
-        <li>About</li>
-        <Divider />
-        <li>Contact</li>
-        <Divider />
-        <li>News</li>
-       
-      </ul>
-
-    </div>
-
+        <div className="mobilenavLinks">
+          <ul className="mobilenavlistitem">
+            <li>Menu</li>
+            <Divider />
+            <li>About</li>
+            <Divider />
+            <li>Contact</li>
+            <Divider />
+            <li>News</li>
+          </ul>
+        </div>
       </List>
       <Divider />
-      
     </Box>
   );
 
-
-
-
   return (
+    <div>
+      <MenuIcon onClick={onClickHandel} className="menuicon" fontSize="large" />
 
-
-    <div >
-
-       
-
-<MenuIcon onClick={onClickHandel} className='menuicon' fontSize='large' />
-
-          <Drawer 
-            anchor={'left'}
-            open={state['left']}
-            onClose={toggleDrawer('left', false)}
-          >
-            {list('left')}
-
-          </Drawer>
-        
-     
-    
-     
+      <Drawer
+        anchor={'left'}
+        open={state['left']}
+        onClose={toggleDrawer('left', false)}
+      >
+        {list('left')}
+      </Drawer>
     </div>
   );
 }

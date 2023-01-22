@@ -1,159 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans+JP&family=Zen+Dots&display=swap');
 
+.headerContainer {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 4rem;
+  min-width: 30rem;
 
-
-
-
-.headerContainer{
-   
-  
-   
-
-background-color: transparent;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 3rem 4rem;
-min-width: 30rem;
-
-background-color: white;
-
-
-
+  background-color: white;
 }
 
-
-.menuiconContainer{
-
-display: none;
-
-
+.menuiconContainer {
+  display: none;
 }
 
-
-
-.linkContainer{
-
-  
-   display: flex;
-   align-items: center;
-
-
+.linkContainer {
+  display: flex;
+  align-items: center;
 }
 
 .linkContainer a {
-
-
-font-size: 1.6rem;
-padding: 0 2rem;
-
+  font-size: 1.6rem;
+  padding: 0 2rem;
 }
 
-
-
-a:link ,a:visited {
-
-    text-decoration: none;
-    color: rgb(71, 71, 71);
-     font-family: 'Roboto', sans-serif;
+a:link,
+a:visited {
+  text-decoration: none;
+  color: rgb(71, 71, 71);
+  font-family: 'Roboto', sans-serif;
 }
 
-a:hover,a:active {
-
-
-    text-decoration: none;
-    color: red;
-     font-family: 'Roboto', sans-serif;
-     transition: all .4s ease;
-     -webkit-transition: all .4s ease;
-
+a:hover,
+a:active {
+  text-decoration: none;
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
-
-
-
 
 .logo {
-    font-size: 3rem;
-    font-family: 'Zen Dots', cursive;
-    color: red;
-    display: inline-block;
+  font-size: 3rem;
+  font-family: 'Zen Dots', cursive;
+  color: red;
+  display: inline-block;
 }
 
-
-.logoMobile{
-
-    display: none;
+.logoMobile {
+  display: none;
 }
-
-
 
 .logoContainer p {
-
-    font-size: 3rem;
-    font-family: 'Zen Dots', cursive;
-    color: red;
-    
-
+  font-size: 3rem;
+  font-family: 'Zen Dots', cursive;
+  color: red;
 }
-
 
 .carticon {
-
-font-size: 30px;
-
+  font-size: 30px;
 }
 
-.cartConainter{
-
-cursor: pointer;
-
-
+.cartConainter {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
+  .linkContainer {
+    display: none;
+  }
 
-
-
-    .linkContainer {
-      display: none;
-    }
-
-
-
-    .menuiconContainer {
-
-
-            display: block;
-            
-
-    }
-
-    .menuicon{
-
-        font-size: 3rem !important;
-       
-        color: black;
-        cursor: pointer;
-
-    }
-
-
-.logoMobile{
-
+  .menuiconContainer {
     display: block;
-    
+  }
+
+  .menuicon {
+    font-size: 3rem !important;
+
+    color: black;
+    cursor: pointer;
+  }
+
+  .logoMobile {
+    display: block;
+  }
 }
 
+@media screen and (max-width: 350px) {
+  .headerContainer {
+    gap: 1rem;
+    padding: 2rem 1.5rem;
   }
-
-
-  @media screen and (max-width: 350px) {
-
-
-    .headerContainer{
-
-            gap: 1rem;
-            padding: 2rem 1.5rem;
-    }
-
-  }
+}

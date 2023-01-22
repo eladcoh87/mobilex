@@ -1,7 +1,4 @@
-
-
 .hero-section {
-
   width: 100%;
 
   min-width: 30rem;
@@ -9,19 +6,13 @@
   text-align: center;
   color: white;
   margin-bottom: 0.2rem;
-
 }
 
-
 .hero-section img {
-
-
   width: 100%;
   max-height: 70rem;
   object-fit: cover;
-
 }
-
 
 .centered {
   margin-top: 5rem;
@@ -29,90 +20,47 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+
   color: white;
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
- 
-  
-
-  
 }
 
-
-
 .centered h5 {
- 
-  font-size: clamp(2.3rem, 2.5vw, 8rem); 
+  font-size: clamp(2.3rem, 2.5vw, 8rem);
   color: white;
   font-family: 'Noto Sans JP', sans-serif;
-  
 }
 
 .centered p {
- 
-  font-size: clamp(0.2rem, 2.5vw, 2rem); 
+  font-size: clamp(0.2rem, 2.5vw, 2rem);
   color: white;
   font-family: 'Noto Sans JP', sans-serif;
   margin-bottom: 2rem;
 }
 
-
-
-  
 @media screen and (max-width: 1070px) {
-
-  
-  
-  
   .centered {
-
-
     display: flex;
     flex-direction: column;
-    
-
-
   }
-    
-
 
   .centered h5 {
-
-
     margin-bottom: 2rem;
   }
-
-
 }
 
-
 @media screen and (max-width: 650px) {
-
   .centered p {
- 
-   display: none;
+    display: none;
   }
-  
-  
-  
-  
-    }
+}
 
-
-    
 @media screen and (max-width: 335px) {
-
   .hero-section {
- 
     min-width: 33rem;
   }
-  
-  
-  
-  
-    }
-
+}
 
 /* 
 .hero-section {
@@ -134,7 +82,7 @@
   }
    */
 
-  /* .hero-section .hero-section-text{
+/* .hero-section .hero-section-text{
     margin-top: 5rem;
     
   }

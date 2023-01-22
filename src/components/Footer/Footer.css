@@ -1,218 +1,125 @@
 .FooterSectionContainer {
-
-
-    margin-top: 10rem;
-    background-color: black;
-    padding-bottom: 5rem;
-
+  margin-top: 10rem;
+  background-color: black;
+  padding-bottom: 5rem;
 }
 
-.announcementContainer{
-
-background-color: red;
-padding: 2.4rem 2rem;
-
-
+.announcementContainer {
+  background-color: red;
+  padding: 2.4rem 2rem;
 }
 
-.announcementInfo{
-
-max-width: 120rem;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: space-between;
-
+.announcementInfo {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.announcementInfo h2{
-
-    font-size: clamp(15px, 3vw, 2.3rem); 
-    color: white;
-
-
+.announcementInfo h2 {
+  font-size: clamp(15px, 3vw, 2.3rem);
+  color: white;
 }
 
-
-.announcemenBtn.MuiButton-root{
-
-padding: 1rem 2.5rem;
-border-radius: 30px;
-color: white;
-font-size: 1.4rem;
-border-color: white;
-
-
-
+.announcemenBtn.MuiButton-root {
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.4rem;
+  border-color: white;
 }
-.announcemenBtn.MuiButton-root:hover{
-
-
-    background-color: white;
-    color: red;
-    border-color: white;
+.announcemenBtn.MuiButton-root:hover {
+  background-color: white;
+  color: red;
+  border-color: white;
 }
 
-
-
-.linkSection{
-
-margin: 0 auto;
-max-width: 120rem;
-background-color: rgb(0, 0, 0);
-display: flex;
-align-items: flex-start;
-justify-content: space-between;
-padding: 3rem 1rem;
-
-
+.linkSection {
+  margin: 0 auto;
+  max-width: 120rem;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3rem 1rem;
 }
 
-
-.aboutCard{
-
-flex-basis: 30%;
-
-
+.aboutCard {
+  flex-basis: 30%;
 }
-.aboutCard h1{
-
-font-size: 2rem;
-color: red;
- font-family: 'Noto Sans JP', sans-serif;
- margin-bottom: 2rem;
-
-
-
-
+.aboutCard h1 {
+  font-size: 2rem;
+  color: red;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 2rem;
 }
 
-
-.aboutCard p{
-
-    font-size: 1.3rem;
+.aboutCard p {
+  font-size: 1.3rem;
   color: gray;
   margin-bottom: 2rem;
-  
-    }
+}
 
-    .aboutCard a{
+.aboutCard a {
+  font-size: 1.3rem;
+  color: white;
+}
 
+.aboutCard a:hover {
+  color: red;
+}
 
-        font-size: 1.3rem;
-        color: white;
-        
+.linknav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
+.linknav h6 {
+  color: gray;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
 
-    }
-
-    .aboutCard a:hover{
-
-
-      color: red;
-        
-
-
-    }
-
-    .linknav{
-
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-
-
-
-
-
-    }
-
-    .linknav h6 {
-
-        color: gray;
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-    font-family: 'Inter', sans-serif;
-    }
-
-    .linknav a {
-
-      color: white;
-      font-size: 1.3rem;
-        
-
-
-    }
-
-
-
-
-
-
-
-
-
+.linknav a {
+  color: white;
+  font-size: 1.3rem;
+}
 
 @media screen and (max-width: 880px) {
-   
-        .announcementInfo{
-
-
-            flex-direction: column;
-
-        }
-
-        .announcementInfo h2{
-
-
-            margin-bottom: 3rem;
-
-        }
-
-        .announcemenBtn.MuiButton-root{
-
-            padding: 1rem 2.5rem;
-            border-radius: 30px;
-            color: white;
-            font-size: 1.1rem;
-            border-color: white;
-            
-            
-            
-            }
-
+  .announcementInfo {
+    flex-direction: column;
   }
 
+  .announcementInfo h2 {
+    margin-bottom: 3rem;
+  }
 
-  @media screen and (max-width: 630px) {
-
-
-        .aboutCard{
-
-
-            margin-bottom: 5rem;
-
-        }
-
-        .aboutCard h1{
-            text-align: center;
-
-                
-        }
-    .linkSection {
-
-
-        flex-direction: column;
-        align-items: center;
-        
-    } 
-
-
-.linknav{
-
-    flex-direction: row;
-  
-
-    
+  .announcemenBtn.MuiButton-root {
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.1rem;
+    border-color: white;
+  }
 }
+
+@media screen and (max-width: 630px) {
+  .aboutCard {
+    margin-bottom: 5rem;
   }
+
+  .aboutCard h1 {
+    text-align: center;
+  }
+  .linkSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .linknav {
+    flex-direction: row;
+  }
+}
